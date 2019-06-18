@@ -1,7 +1,7 @@
 import keras
 import numpy as np
-from data.vocab import TextEncoder
-from transformer.layers import LayerNormalization
+from ..data.vocab import TextEncoder
+from ..transformer.layers import LayerNormalization
 
 
 def _get_pos_encoding_matrix(max_len: int, d_emb: int) -> np.array:

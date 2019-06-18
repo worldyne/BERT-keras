@@ -2,7 +2,7 @@ import math
 import keras.backend as K
 from keras.layers import Layer
 from keras.initializers import Ones, Zeros
-from transformer.funcs import gelu, multihead_attention
+from ..transformer.funcs import gelu, multihead_attention
 
 
 class MultiHeadAttention(Layer):

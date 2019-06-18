@@ -1,9 +1,9 @@
 import keras
 import keras.backend as K
-from data.vocab import TextEncoder
-from transformer.embedding import Embedding
+from ..data.vocab import TextEncoder
+from ..transformer.embedding import Embedding
 from keras.layers import Conv1D, Dropout, Add, Input
-from transformer.layers import MultiHeadAttention, Gelu, LayerNormalization
+from ..transformer.layers import MultiHeadAttention, Gelu, LayerNormalization
 
 
 class MultiHeadSelfAttention:

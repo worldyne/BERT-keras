@@ -3,9 +3,9 @@ import keras
 import numpy as np
 import tensorflow as tf
 import keras.backend as K
-from data.vocab import TextEncoder
-from google_bert.modeling import BertConfig
-from transformer.model import create_transformer
+from ..data.vocab import TextEncoder
+from ..google_bert.modeling import BertConfig
+from ..transformer.model import create_transformer
 
 
 def load_openai_transformer(path: str = './openai/model/', use_attn_mask: bool = True,
